@@ -7,14 +7,16 @@ public class Nombres {
     
     
     
-    public String generarPalabras(int tamano){
+    public String generarPalabras(){
 
-        String palabraAleatoria = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        int n = 300;
+        String palabraAleatoria = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         String palabraGenerada ="";
+        n = (int) (Math.random() * n) + 1;
+        for (int i=0;i<=n;i++){
 
-        for (int i=0;i<=tamano;i++){
-
-            int indice = (int) (Math.random() * 24) + 1;;
+            int indice = (int) (Math.random() * 48) + 1;;
             char Aleatorio = palabraAleatoria.charAt(indice);
             palabraGenerada = palabraGenerada + Aleatorio;
 
