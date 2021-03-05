@@ -10,10 +10,10 @@ public class Nombres {
     public String generarPalabras(){
 
 
-        int n = 300;
+
         String palabraAleatoria = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         String palabraGenerada ="";
-        n = (int) (Math.random() * n) + 1;
+        int  n = (int) (Math.random() * 6) + 1;
         for (int i=0;i<=n;i++){
 
             int indice = (int) (Math.random() * 48) + 1;;

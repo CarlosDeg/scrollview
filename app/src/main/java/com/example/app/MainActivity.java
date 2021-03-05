@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                for(int i=0;i<=234;i++){ //012 5 5 5
+                for(int i=0;i<100;i++){ //012 5 5 5
 
-                  textView.append(n.generarPalabras());
+                  textView.append(" palabra generada -> "+n.generarPalabras()+ " -> INDICE: -> "+ i +" ->");
 
 
                 }
